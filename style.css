@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Custom classes */
+.navbar {
+  @apply flex justify-between items-center px-8 py-6 bg-white shadow-md;
+}
+
+.logo {
+  @apply text-3xl font-bold text-purple-600;
+}
+
+.nav-links a {
+  @apply text-lg mx-3 hover:text-purple-600 transition;
+}
+
+.hero {
+  @apply text-center px-6 mt-24 md:mt-32;
+}
+
+.hero h1 {
+  @apply text-5xl md:text-6xl font-bold text-purple-700 mb-6 leading-tight;
+}
+
+.hero p {
+  @apply text-xl text-gray-700 mb-8 max-w-2xl mx-auto;
+}
+
+.cta-buttons {
+  @apply flex justify-center space-x-4;
+}
+
+.btn-primary {
+  @apply bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full text-white font-semibold transition;
+}
+
+.btn-secondary {
+  @apply border border-purple-500 hover:bg-purple-100 px-6 py-3 rounded-full text-purple-600 font-semibold transition;
+}
+
+.features {
+  @apply mt-32 px-6 max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center;
+}
+
+.feature-card {
+  @apply bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition;
+}
+
+.feature-card h3 {
+  @apply text-2xl font-semibold mb-2 text-purple-600;
+}
+
+.feature-card p {
+  @apply text-gray-600;
+}
+
+.footer {
+  @apply mt-32 bg-white py-10 text-center text-gray-500 text-sm;
+}
